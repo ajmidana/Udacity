@@ -44,9 +44,9 @@ The Data include around 100k medial appointments which has the following variabl
 
 > **By conducting this analysis, the following question will be answered:**
 
-1. How many patients are missed their appointments?
-1. Predict most important factors that impacted patients attending to their medical appointments?
-1. Find out impact of patient’s age and waiting time (time period between schedule date and appointment actual date) on the status appointment attending.
+1. [How many patients are missed their appointments?](#q1)
+1. [Predict most important factors that impacted patients attending to their medical appointments?](#q2)
+1. [Find out impact of patient’s age and waiting time (time period between schedule date and appointment actual date) on the status appointment attending.](#q3)
 
 
 
@@ -82,6 +82,13 @@ This Project have the following files:
 
 
 ### Results <a name="results"></a>
+1. Analysis showed that around 20% of patients was missed their medical appointments that are from 29th April to 8th of June, 2016.<a name="q1"></a>
+
+2. Analysis showed Age and waiting time (the time from the appointment is scheduled until actual appointment date) as the most factor that affected patients’ attending to their appointment.<a name="q2"></a>
+
+3. Regarding the impact of patints’ age, Analysis showed that patients from 15 to 50 years are the ones who most likely to miss their medical appointments.<a name="q3"></a>
+
+4. Analysis showed that the appointment with waiting time from 5 to 25 days are tend to be missed by patients.
 
 
 

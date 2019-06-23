@@ -79,4 +79,4 @@ This Project have the following files:
 
 ### Licensing, Authors, Acknowledgements
 
-The data set was extracted from Kaggle website. You can refer to their online website to check the problem description and full detail clich [here](https://www.kaggle.com/joniarroba/noshowappointments/home)
+The data set was extracted from Kaggle website. You can refer to their online website to check the problem description and full detail by clicking [here](https://www.kaggle.com/joniarroba/noshowappointments/home)

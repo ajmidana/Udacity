@@ -1,6 +1,82 @@
-To Read Blog, Please refer to the story on Medium Website<br/>
-https://medium.com/@dana.ajmi/why-patients-miss-thier-medical-appointments-2aaf78ec0c3f
-
-<div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h1 name="41d6" id="41d6" class="graf graf--h3 graf--leading graf--title">Why Patients Miss thier Medical Appointments</h1><h3 name="42d1" id="42d1" class="graf graf--h3 graf-after--h3">Introduction</h3><p name="fc78" id="fc78" class="graf graf--p graf-after--h3">The goal of this analysis is to investigate medical appointment dataset of one of public hospitals in Brazil. The data includes some attributes of patients and state if the patients showed up to appointments. The analysis will focus on finding the most factors that affecting patients attending to their medical appointments.</p><p name="fb0a" id="fb0a" class="graf graf--p graf-after--p">The dataset was extracted from Kaggle website. You can refer to their online website to check the problem description and full detail <a href="https://www.kaggle.com/joniarroba/noshowappointments/home" data-href="https://www.kaggle.com/joniarroba/noshowappointments/home" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://www.kaggle.com/joniarroba/noshowappointments/home</a></p><p name="8897" id="8897" class="graf graf--p graf-after--p">The Data include around 100k medial appointments which has the following variables</p><h4 name="ca6b" id="ca6b" class="graf graf--h4 graf-after--p">Independent Variables:</h4><ol class="postList"><li name="d752" id="d752" class="graf graf--li graf-after--h4"><strong class="markup--strong markup--li-strong">PatientId:</strong> Identification of a patient</li><li name="fb94" id="fb94" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">AppointmentID:</strong> Identification of the appointment</li><li name="9423" id="9423" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Gender:</strong> Male or Female</li><li name="9ab8" id="9ab8" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">ScheduledDay: </strong>The day where the appointment was registered in the system</li><li name="257c" id="257c" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">AppointmentDay:</strong> Actuall appointment date</li><li name="54b0" id="54b0" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Age: </strong>Patient’s age</li><li name="7518" id="7518" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Neighbourhood</strong>: Appointment site</li><li name="838f" id="838f" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Scholarship</strong>: True or False, it indicates if the patient is in the Bolsa Familia program or not</li><li name="62a2" id="62a2" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Hipertension</strong>: True or False</li><li name="11ca" id="11ca" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Diabetes</strong>: True or False</li><li name="e01f" id="e01f" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Alcoholism</strong>: True or False</li><li name="7347" id="7347" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Handcap</strong>: True or False</li><li name="5b57" id="5b57" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">SMS_received</strong>: True or False, it indicates if the patient was received SMS reminder or not.</li></ol><h4 name="639f" id="639f" class="graf graf--h4 graf-after--li">Dependent Variables</h4><ol class="postList"><li name="aa2c" id="aa2c" class="graf graf--li graf-after--h4 graf--trailing">No-show: Yes or now. it indicates if the patient showed up to their appointment or not.</li></ol></div></div></section><section name="f593" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="c527" id="c527" class="graf graf--p graf--leading">By conducting this analysis, the following question will be answered:</p><p name="e1f2" id="e1f2" class="graf graf--p graf-after--p">1. How many patients are missed their appointments?</p><p name="7c68" id="7c68" class="graf graf--p graf-after--p">2. Predict most important factors that impacted patients attending to their medical appointments?</p><p name="51b9" id="51b9" class="graf graf--p graf-after--p">3. Find out impact of patient’s age and waiting time (time period between schedule date and appointment actual date) on the status appointment attending.</p><h3 name="06a7" id="06a7" class="graf graf--h3 graf-after--p">
+# Why Patients Miss their Medical Appointments
 
 
+
+----------
+
+### Introduction
+
+  The goal of this analysis is to investigate medical appointment dataset of one of public hospitals in Brazil. The data includes some attributes of patients and state if the patients showed up to appointments. The analysis will focus on finding the most factors that affecting patients attending to their medical appointments.
+
+
+The Data include around 100k medial appointments which has the following variables
+
+**Independent Variables:**
+
+- PatientId: Identification of a patient
+- AppointmentID: Identification of the appointment
+- Gender: Male or Female
+- ScheduledDay: The day where the appointment was registered in the system
+- AppointmentDay: Actuall appointment date
+- Age: Patient’s age
+- Neighbourhood: Appointment site
+- Scholarship: True or False, it indicates if the patient is in the Bolsa Familia program or not
+- Hipertension: True or False
+- Diabetes: True or False
+- Alcoholism: True or False
+- Handcap: True or False
+- SMS_received: True or False, it indicates if the patient was received SMS reminder or not.
+
+**Dependent Variables**
+
+- No-show: Yes or now. it indicates if the patient showed up to their appointment or not.
+
+
+
+
+> **By conducting this analysis, the following question will be answered:**
+
+1. How many patients are missed their appointments?
+1. Predict most important factors that impacted patients attending to their medical appointments?
+1. Find out impact of patient’s age and waiting time (time period between schedule date and appointment actual date) on the status appointment attending.
+
+
+
+
+### Installation
+
+This project requires to install **Python** and the following Python's libraries:
+
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [Jupyter Notebook](http://ipython.org/notebook.html)
+
+**Note:** you can install [Anaconda](http://continuum.io/downloads) if you don't have installed Python yet
+
+
+
+### Project Motivation
+
+This Project was conducted as a part of Udacity Nanodegree Program in Data Science. I was interested on this subject because I already worked in public health care sector and I faced this problem on daily bases.
+
+
+### File Descriptions
+
+This Project have the following files:
+
+- [Medical Appointments.ipynb](https://github.com/ajmidana/Udacity_BlogProject/blob/master/Medical%20Appointments.ipynb) to find answers related to the above questions.
+- [App_May_2016.csv](https://github.com/ajmidana/Udacity_BlogProject/blob/master/App_May_2016.csv) contain dataset that was used in current project.
+
+
+
+
+
+### Results
+
+
+
+### Licensing, Authors, Acknowledgements
+
+The data set was extracted from Kaggle website. You can refer to their online website to check the problem description and full detail clich [here](https://www.kaggle.com/joniarroba/noshowappointments/home)

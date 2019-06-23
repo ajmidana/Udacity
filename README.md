@@ -1,10 +1,18 @@
 # Why Patients Miss their Medical Appointments
 
+### Table of Contents
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Project Motivation](#motivation)
+4. [File Descriptions](#files)
+5. [Results](#results)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 
 
 
-### Introduction
+### Introduction <a name="introduction"></a>
 
   The goal of this analysis is to investigate medical appointment dataset of one of public hospitals in Brazil. The data includes some attributes of patients and state if the patients showed up to appointments. The analysis will focus on finding the most factors that affecting patients attending to their medical appointments.
 
@@ -43,7 +51,7 @@ The Data include around 100k medial appointments which has the following variabl
 
 
 
-### Installation
+### Installation <a name="installation"></a>
 
 This project requires to install **Python** and the following Python's libraries:
 
@@ -57,12 +65,12 @@ This project requires to install **Python** and the following Python's libraries
 
 
 
-### Project Motivation
+### Project Motivation <a name="motivation"></a>
 
 This Project was conducted as a part of Udacity Nanodegree Program in Data Science. I was interested on this subject because I already worked in public health care sector and I faced this problem on daily bases.
 
 
-### File Descriptions
+### File Descriptions <a name="files"></a>
 
 This Project have the following files:
 
@@ -73,10 +81,10 @@ This Project have the following files:
 
 
 
-### Results
+### Results <a name="results"></a>
 
 
 
-### Licensing, Authors, Acknowledgements
+### Licensing, Authors, Acknowledgements <a name="licensing"></a>
 
 The data set was extracted from Kaggle website. You can refer to their online website to check the problem description and full detail by clicking [here](https://www.kaggle.com/joniarroba/noshowappointments/home)
